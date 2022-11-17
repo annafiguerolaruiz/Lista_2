@@ -6,6 +6,7 @@ public class Ex3 : MonoBehaviour
 {
     void Update()
     {
+        //Moviments
         if (transform.position.y <= 79)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow))
