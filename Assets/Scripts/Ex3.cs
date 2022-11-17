@@ -4,15 +4,38 @@ using UnityEngine;
 
 public class Ex3 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        if (transform.position.y <= 79)
+        {
+            if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                transform.Translate(0, 40f, 0);
+            }
+        }
+        if (transform.position.y >= -79)
+        {
+            if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                transform.Translate(0, -40f, 0);
+            }
+        }
+
+        if (transform.position.x >= -79)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                transform.Translate(-40f, 0, 0);
+            }
+        }
+
+        if (transform.position.x <= 79)
+        {
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                transform.Translate(40f, 0, 0);
+            }
+        }
+
     }
 }
