@@ -18,7 +18,7 @@ public class Ex1_More_Enemies : MonoBehaviour
 
     private Vector3 RandomPosition() 
     {
-        //We insttanciamos enemies within the limits of the screen
+        //We instantiate enemies within the limits of the screen
         return new Vector3(Random.Range(-8, 8), Random.Range(-4, 4), 0);
     }
 
@@ -35,7 +35,5 @@ public class Ex1_More_Enemies : MonoBehaviour
             }
         }
     }
-
-   
 
 }
